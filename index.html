@@ -9,6 +9,7 @@
     />
     <meta name="keywords" content="chatbot, WhatsApp, DialogoBot" />
     <meta name="author" content="Tu Nombre" />
+    <meta name="theme-color" content="#25d366" />
 
     <!-- SEO Social Media Tags -->
     <meta
@@ -35,14 +36,18 @@
     />
 
     <!-- Estilos personalizados para el modo claro y oscuro -->
-
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
+    <div class="loader-container" id="loader">
+      <i class="bi bi-robot"></i>
+    </div>
     <!-- Barra de navegación 
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" >
         <div class="container-fluid">
@@ -130,18 +135,25 @@
 
     <!-- Sección de Precios -->
     <section id="precios" class="bg-light py-5">
-      <h1 class="text-center mb-4" style="color: #25d366">Demo</h1>
       <div class="container">
-        <div class="row">
-          <div class="col"></div>
-          <div class="ratio ratio-1x1">
-            <video
-              src="assets/img/demo.mp4"
-              class="object-fit-scale"
-              autoplay
-            ></video>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-8 text-center mb-4">
+            <h1 class="display-4" style="color: #25d366">Demo</h1>
+            <p class="lead">Descubre nuestra increíble demostración en video</p>
           </div>
-          <div class="col"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/rcOoB4NARfo?si=MVb1CpOlB_I5_5Av"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
